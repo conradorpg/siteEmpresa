@@ -1,0 +1,769 @@
+/* Todo o site */
+
+* {
+    
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Open Sans', sans-serif;
+}
+
+/* Icones Fontello */
+
+.icones i {
+    font-size: 50px;
+    font-family: fontello;
+    color: #0D93B9;
+}
+
+.inscricao i {
+    font-size: 30px;
+}
+
+.width-33 i {
+    color: white;
+    font-size: 20px;
+}
+
+/* Classes Auxiliares */
+
+.container {
+    max-width: 1280px;
+    margin: 0 auto;
+    padding: 0 2%;
+}
+
+.width-100 {
+    width: 100%;
+    float: left;
+}
+
+.width-60 {
+    width: 60%;
+    float: left;
+}
+
+.width-50 {
+    width: 50%;
+    float: left;
+}
+
+.width-40 {
+    width: 40%;
+    float: left;
+}
+
+.width-33 {
+    float: left;
+    width: 33.33%;
+}
+
+.center {
+    text-align: center;
+}
+
+.clear {
+    clear: both;
+}
+
+/* Menu Principal 01 */
+
+header {
+    padding: 8px 0;
+}
+
+.logo {
+    float: left;
+}
+
+.logo h2 {
+    font-weight: normal;
+    font-size: 23px;
+}
+
+.logo a {
+    color: black;
+    text-decoration: none;
+}
+
+nav.menu-desktop {
+    float: right;
+}
+
+nav.menu-desktop ul {
+    position: relative;
+    top: 8px;
+}
+
+nav.menu-desktop li {
+    padding: 0 10px;
+    font-weight: lighter;
+    display: inline-block;
+}
+
+nav.menu-desktop li.selected {
+    font-weight: bold;
+}
+
+nav.menu-desktop a {
+    color: black;
+    text-decoration: none;
+}
+
+nav.menu-desktop a:hover {
+    text-decoration: underline;
+}
+
+nav.menu-mobile {
+    display: none;
+    float: right;
+}
+
+nav.menu-mobile {
+    cursor: pointer;
+}
+
+nav.menu-mobile ul {
+    display: none;
+    width: 100%;
+    background: white;
+    position: absolute;
+    left: 0;
+    top: 49px;
+    z-index: 9;
+    text-align: center;
+}
+
+nav.menu-mobile li {
+    padding: 8px 0;
+    border-bottom: 1px solid black;
+}
+
+nav.menu-mobile li.selected {
+    background-color: lightgray;
+}
+
+nav.menu-mobile a {
+    display: block;
+    color: black;
+    text-decoration: none;
+}
+
+/* Seção 02 Principal */
+
+section.main-background {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    padding: 100px 0;
+    background-image: url('../images/banner.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+section.main-background > .container {
+    position: relative;
+    z-index: 2;
+}
+
+.overlay {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    left: 0;
+    top: 0;
+    z-index: 1;
+    background: rgba(0,0,0,0.4);
+}
+
+section.main-background h2 {
+    text-align: center;
+    padding-bottom: 0;
+    color: #16B0D6;
+    font-size: 50px;
+    font-weight: normal;
+    
+}
+
+section.main-background p {
+    text-align: left;
+    padding-top: 30px;
+    color: #FFF7F8;
+    font-size: 18px;
+    font-weight: normal;
+    
+}
+
+/* Seção 03 Experiência do Usuário */
+
+section.diferenciais {
+    padding: 30px 0 0 10px;
+    text-align: center;
+}
+
+.line-text {
+    position: relative;
+    display: inline-block;
+    color: #0D90BA;
+    
+}
+
+.line-text > div {
+    position: absolute;
+    width: 0;
+    height: 3px;
+    left: 0;
+    top: 0;
+    background: #0D90BA;
+}
+
+.line-text h2 {
+    font-weight: normal;
+    font-size: 25px;
+    color: #0D93B9;
+}
+
+.box-icone {
+    float: left;
+    width: 33.3%;
+    padding: 30px;
+}
+
+.box-icone h2 {
+    padding-bottom: 20px;
+}
+
+.box-icone p {
+    color: #0D93B9;
+    font-weight: lighter;
+    font-size: 18px;
+}
+
+/* Seção 04 Equipe e Sobre */
+
+.equipe-sobre {
+    padding: 30px 0;
+    background: #D9DDDE;
+}
+
+.equipe-sobre > .container {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.box-equipe {
+    width: 50%;
+}
+
+.box-equipe h2 {
+    margin-bottom: 10px;
+}
+
+.box-sobre {
+    width: 50%;
+}
+
+.box-sobre p {
+    color: black;
+    font-size: 15px;
+    margin-top: 10px;
+}
+
+.imagem-avatar {
+    display: inline-block;
+    width: 70px;
+    height: 70px;
+    border-radius: 50%;
+    background-size: 100% 100%;
+}
+
+.descricao-avatar {
+    vertical-align: top;
+    display: inline-block;
+    width: calc(100% -70px);
+    padding: 0 10px;
+}
+
+.descricao-avatar h3 {
+    color: black;
+    font-weight: normal;
+    font-style: italic;
+}
+
+.descricao-avatar p {
+    color: black;
+    font-weight: lighter;
+    padding-bottom: 20px;
+}
+
+/* Seção 05 Inscrição */
+
+.inscricao {
+    background: #0A92BC;
+    padding: 20px 0;
+}
+
+.inscricao-titulo {
+    font-weight: normal;
+    color: white;
+}
+
+.inscricao-formulario input[type=text] {
+    width: calc(100% - 120px);
+    height: 30px;
+    background: white;
+    border: 1px solid #ccc;
+    display: inline-block;
+}
+
+.inscricao-formulario input[type=submit] {
+    width: 120px;
+    height: 30px;
+    background: #086B8A;
+    cursor: pointer;
+    display: inline-block;
+    border: 0;
+    color: white;
+    font-weight: bold;
+    font-size: 13px;
+}
+
+/* Seção 06 Cards */
+
+.cards {
+    padding: 0 0;    
+}
+
+.card-single {
+    width: 33.3%;
+    float: left;
+    padding: 40px;
+}
+
+.card-single img {
+    width: 100%;
+}
+
+.card-single h3 {
+    margin-top: 20px;
+    font-weight: normal;
+    font-size: 20px;
+    
+}
+
+.card-single p {
+    margin: 10px 0;
+    font-weight: lighter;
+    font-size: 18px;
+    padding-bottom: 10px;
+    border-bottom: 2px solid #ccc;
+}
+
+.footer-01 {
+    background: #7BBFD4;
+    padding: 20px 0;
+    color: white;
+}
+
+.footer-01 h2 {
+    font-weight: normal;
+    font-size: 23px;
+}
+
+.footer-01 p {
+    margin-top: 8px;
+    font-weight: lighter;
+}
+
+.footer-01 a {
+    display: block;
+    color: white;    
+}
+
+.footer-02 {
+    background: #0A92BC;
+    padding: 10px 0;
+    color: white;
+    text-align: center;
+    font-weight: normal;
+    font-size: 14px;
+}
+
+
+/* Página Sobre */
+
+section.title-page {
+    position: relative;
+    width: 100%;
+    min-height: 150px;
+    padding: 30px;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+section.title-page > .container {
+    position: relative;
+    z-index: 2;
+}
+
+.overlay__title-page {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    left: 0;
+    top: 0;
+    z-index: 1;
+    background: rgba(0,0,0,0.4);
+}
+
+.title-page h2 {
+    color: #16B0D6;
+    font-size: 35px;
+    font-weight: normal
+}
+
+.title-page p {
+    font-weight: lighter;
+    font-size: 16px;
+    color: white;
+    margin-top: 15px;
+}
+
+/* Sobre Container Noticia */
+
+section.sobre__noticia {
+    padding: 30px 0;
+}
+
+.noticia-principal img {
+    width: 50%;
+    float: left;
+    max-width: 100%;
+}
+
+.noticia-principal p {
+    width: 50%;
+    float: left;
+    padding: 10px 15px;
+    font-size: 16px;
+    font-weight: lighter;
+}
+
+.noticia-rodape {
+    width: 100%;
+    float: left;
+    padding: 10px 15px;
+    font-size: 16px;
+    font-weight: lighter;
+}
+
+/* /Seção Parallax Página Sobre */
+
+section.parallax {
+    padding: 30px 0;
+    width: 100%;
+    min-height: 200px;
+    background-image: url(../images/banner.jpg);
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    text-align: center;
+}
+
+.parallax h2 {
+    border: 1px solid #16B0D1;
+    padding: 5px 16px;
+    color: #16B0D1;
+    font-size: 18px;
+    display: inline-block;
+}
+
+
+.parallax p {
+    color: white;
+    padding: 20px 0;
+}
+
+/* Seção Equipe Circle */
+
+section.equipe {
+    padding: 40px 0;
+}
+
+.equipe-circles {
+    margin-top: 20px;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.circle-single {
+    padding: 0 20px;
+    text-align: center;
+    width: 33.33%;
+}
+
+.circle-single h3 {
+    margin-top: -8%;
+    font-weight: normal;
+    font-size: 20px;
+}
+
+.circle-single p {
+    font-weight: lighter;
+}
+
+.avatar-single {
+    position: relative;
+    width: 50%;
+    padding-top: 50%;
+    margin: 0 auto;
+}
+
+.single-container {
+    position: absolute;
+    width: 85%;
+    height: 90%;
+    border-radius: 50%;
+    left: 5%;
+    top: -10%;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+section.sobre__final {
+    background-color: rgb(255,255,255);
+    border-top: 2px solid rgb(210,210,210);
+    padding: 20px 0;
+}
+
+section.sobre__final p {
+    padding: 10px 0;
+    font-size: 16px;
+    font-weight: lighter;
+}
+
+.card-text {
+    width: 80%;
+    position: relative;
+    padding: 10px 0;
+}
+
+.card-text img {
+    max-width: 100%;
+    width: 600px;
+    height: 200px;
+}
+
+.card-text h3 {
+    position: absolute;
+    right: 10px;
+    bottom: 10px;
+    color: white;
+    font-size: 20px;
+    font-weight: normal;
+}
+
+/* Seção Contato */
+
+section.contato {
+    min-height: 500px;
+    padding: 30px 0;
+}
+
+section.contato .width-50, section.contato .width-100{
+    padding: 0 10px;
+    margin-top: 10px;
+}
+
+.formulario h2 {
+    background: #dddddd;
+    text-align: center;
+    color: #acac9d;
+    font-size: 17px;
+    font-weight: normal;
+    border-left: 5px solid #cccccc;
+    padding: 4px 0;
+}
+
+.formulario input[type=text], .formulario input[type=email] {
+    width: 100%;
+    height: 40px;
+    border: 1px solid #ccc;
+    margin-bottom: 15px;
+    padding-left: 8px;
+    
+}
+
+.formulario textarea {
+    width: 100%;
+    height: 120px;
+    border: 1px solid #ccc;
+    margin-bottom: 15px;
+    padding: 10px;
+    resize: vertical;
+}
+
+.tags-form {
+    padding-left: 50px;
+}
+
+.tags-form h2 {
+    font-weight: normal;
+}
+
+.tags-form p {
+    font-weight: lighter;
+}
+
+.tags-form p.tag-contato {
+    color: white;
+    background: #7BBFD4;
+    text-align: center;
+    margin-top: 6px;
+    padding: 8px 4px;
+}
+
+/* Codigos Responsivos */
+
+@media screen and  (max-width: 768px) {
+    
+    .box-icone {
+        width: 100%;
+        padding-top: 10px;
+    } 
+    
+    .sobre__noticia-single img {
+        width: 100%;
+    }
+
+    .sobre__noticia-single p {
+        width: 100%;
+    }
+    
+    section.diferenciais h2 {
+        padding-bottom: 20px;    
+    }
+    
+    .box-equipe {
+        width: 100%;
+    }
+    
+    .box-equipe h2 {
+        padding-bottom: 10px;
+        
+    }
+
+    .box-sobre {
+        width: 100%;
+    }
+    
+    .descricao-avatar {
+        text-align: center;
+    }
+    
+    .width-100, .width-60, .width-50, .width-40, .width-33 {
+        width: 100%;
+        margin-bottom: 20px;
+        font-size: 50%;
+    }
+    
+    .card-single {
+        width: 100%;
+    }
+    
+    .footer-01 {
+        text-align: center;
+    }
+    
+    .noticia-principal {
+        font-size: 20px;
+    }
+    
+}
+
+
+@media screen and  (max-width: 667px) {
+    
+    nav.menu-desktop {
+        display: none;
+    }
+    
+    
+    nav.menu-mobile {
+        display: block;
+    }
+    
+    .area-avatar {
+        left: 10px;
+    }
+    
+    .imagem-avatar {
+        margin-left: auto;
+    }
+    
+    .descricao-avatar {
+        font-size: 20px;
+    }
+    
+    .formulario input[type=text], .formulario input[type=email] {
+        margin-bottom: 0;
+    
+    }
+
+    .formulario textarea {
+        margin-bottom: 0;
+        
+    } 
+    
+    .tags-form {
+        padding-left: 0;
+        margin-bottom: 0;
+        font-size: 15px;
+        text-align: center;
+        
+    }
+    
+    .tags-form p.tag-contato {    
+        padding: 0;
+        font-size: 15px;
+        
+    }
+           
+}
+
+@media screen and (max-width: 568px) {
+    
+    .imagem-avatar {
+        margin-left: 100px; 
+    }
+    
+    .card-single {
+        width: 100%;
+    }
+    
+    .noticia-principal img {
+        width: 100%;
+    }
+
+    .noticia-principal p {
+        width: 100%;
+    }
+    
+    .circle-single {
+        padding: 0 8px;
+        width: 100%;
+        margin-bottom: 20px;
+    }
+    
+    .card-text {
+        width: 100%;
+    }
+    
+    .width-40 {
+        width: 100%;
+    }
+    
+}

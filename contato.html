@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Site Empresa</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width; initial-scale=1.0; maximum-scale=1.0">
+    <meta name="keywords" content="nomedosite, nomedaempresa">
+    <!-- Aqui as meta tags SEO -->
+    <link rel="stylesheet" href="css/estilo.css">
+    <link rel="stylesheet" href="css/fontello.css">
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,700" rel="stylesheet">
+</head>
+
+<body>
+    <header>
+        <div class="container">
+            <div class="logo"><a href="index.html">
+                <h2>Logo.Marca</h2></a>
+            </div>
+            
+            <!-- menu desktop -->
+            
+            <nav class="menu-desktop">
+                <ul>
+                    <li>
+                        <a href="index.html">Home</a>
+                    </li>
+                    <li>
+                        <a href="sobre.html">Sobre</a>
+                    </li>
+                    <li class="selected">
+                        <a href="contato.html">Contato</a>
+                    </li>
+                </ul>
+            </nav>
+            
+              <!-- menu mobile -->
+            
+            <nav class="menu-mobile">
+               <h2><i class="icon-menu"></i></h2>
+                <ul>
+                    <li>
+                        <a href="index.html">Home</a>
+                    </li>
+                    <li>
+                        <a href="sobre.html">Sobre</a>
+                    </li>
+                    <li class="selected">
+                        <a href="contato.html">Contato</a>
+                    </li>
+                </ul>
+            </nav>            
+            
+            <div class="clear"></div>
+        </div>
+    </header>
+
+    <section class="title-page" style="background-image: url('images/imagem_02.jpg')";>
+       <div class="overlay__title-page"></div>
+        <div class="container">
+            <h2>Contato</h2>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eveniet cum iure voluptatum labore atque enim veritatis pariatur recusandae, dolorum culpa! A accusantium ipsa, distinctio. Molestias quos temporibus consequatur porro laborum.</p>
+        </div> <!-- container -->
+    </section>
+      
+      <section class="contato">
+          <div class="container">
+                <div class="width-60 formulario">
+                  <h2>Entre em contato que estaremos respondendo o mais breve possivel</h2>
+                  <form method="post">
+                      <div class="width-50 campo-1">
+                          <input type="text" placeholder="Nome..." required />
+                      </div>
+                      <div class="width-50">
+                          <input type="text" placeholder="Sobrenome..." required />
+                      </div>
+                      <div class="width-100">
+                          <input type="email" placeholder="e-mail..." required />
+                      </div>
+                      <div class="width-100">
+                          <textarea placeholder="Sua mensagem..."></textarea>
+                      </div>
+                  </form>
+                </div>
+                
+                <div class="width-40 tags-form">
+                    <h2><i class="icon-comment"></i>Fale com a nossa Equipe!</h2>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+                    
+                    <p class="tag-contato"><i class="icon-facebook"></i>/empresa-tal</p>
+                    <p class="tag-contato"><i class="icon-instagram"></i>/empresa-tal</p>
+                    <p class="tag-contato"><i class="icon-google"></i>/empresa-tal</p>
+                </div>
+                  
+                      
+                <div class="clear"></div>
+          </div> <!-- container -->
+      </section> <!-- contato -->
+             
+    <footer class="footer-01">
+        <div class="container">
+            <div class="width-33">
+                <h2>Aonde Estamos?</h2>
+                <p><i class="icon-pin-outline"></i>Endereço, Bairro, CEP</p>
+                <p><i class="icon-phone"></i>Telefone (19) 9999-9999</p>
+            </div>
+            <div class="width-33">
+                <h2>Links Úteis</h2>
+                <a href="https://www.youtube.com/"><i class="icon-youtube"></i>Youtube</a>
+                <a href="https://www.google.com"><i class="icon-google"></i>Google</a>
+            </div>
+            <div class="width-33">
+                <h2>Conecte-se Conosco</h2>
+                <div class="group-icons">
+                    <a href="https://facebook.com"><i class="icon-facebook"></i>Facebook</a>
+                    <a href="https://instagram.com"><i class="icon-instagram"></i>Instagram</a>
+                </div> <!-- group-icons -->
+            </div> <!-- width-33 -->
+            <div class="clear"></div>
+        </div> <!-- container -->
+    </footer>
+    <footer class="footer-02">
+       <div class="container">
+           <p>Todos os direitos reservados ®</p>
+       </div>        
+    </footer> <!-- footer-02 -->
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+     <script>
+        $('nav.menu-mobile h2').click(function(){
+            $('nav.menu-mobile ul').slideToggle();
+        });
+    </script>
+</body>
+</html>
